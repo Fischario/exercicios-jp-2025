@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: system-ui;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: max-content;
+    min-height: max-content;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: rgb(68, 204, 56);
+}
+
+footer {
+    margin: 0;
+    padding: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+header {
+    margin: 0;
+    padding: 20px;
+}
+
+/* classes */
+
+.card {
+    padding: 20px;
+    margin: 20px;
+    border: 4px solid rgb(39, 155, 74);
+    border-radius: 18px;
+    box-shadow: rgb(39, 155, 74) 0 0 10px;
+    transition: scale 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    scale: 110%;
+    box-shadow: rgb(39, 155, 74) 0 0 15px;
+}
