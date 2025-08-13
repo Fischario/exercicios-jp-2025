@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: system-ui;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: max-content;
+    min-height: max-content;
+}
+
+/* ul (lista não-ordenada) */
+
+li {
+    margin: 4px;
+}
+
+/* a (links locais) */
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: rgb(68, 204, 56);
+}
+
+/* footer */
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    position: center;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid white;
+    background-color: black;
+    bottom: 0;
+    transition: border-top 0.2s;
+}
+
+footer:has(a:hover) {
+    border-top: 3px solid rgb(68, 204, 56);
+}
+
+/* header */
+
+header {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+header:hover {
+    cursor: default;
+}
+
+/* classes */
+
+.card {
+    padding: 20px;
+    margin: 40px;
+    border: 4px solid rgb(39, 155, 74);
+    border-radius: 18px;
+    box-shadow: rgb(39, 155, 74) 0 0 10px;
+    transition: scale 0.2s, box-shadow 0.2s;
+    min-width: 600px;
+    max-width: auto;
+}
+
+.card h2 {
+    font-style: italic;
+}
+
+.card:hover {
+    scale: 105%;
+    box-shadow: rgb(39, 155, 74) 0 0 15px;
+}
+
+/* media query-s */
+
+@media only screen and (min-width: 728px) and (max-width: 1000px) {
+    /* metade da tela do pc do senac */
+    .card {
+        width: 100px;
+    }
+}
