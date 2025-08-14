@@ -1,3 +1,9 @@
+/* chamar o arquivo com as variaveis padrão */
+
+@import url(raizera.css);
+
+/* body */
+
 body {
     background-color: black;
     color: white;
@@ -8,9 +14,10 @@ body {
     align-items: center;
     min-width: max-content;
     min-height: max-content;
+    cursor: default;
 }
 
-/* ul (lista não-ordenada) */
+/* li (item (da lista não-ordenada)) */
 
 li {
     margin: 4px;
@@ -25,7 +32,7 @@ a {
 }
 
 a:hover {
-    color: rgb(68, 204, 56);
+    color: var(--cor-primaria);
 }
 
 /* footer */
@@ -43,7 +50,7 @@ footer {
 }
 
 footer:has(a:hover) {
-    border-top: 3px solid rgb(68, 204, 56);
+    border-top: 3px solid var(--cor-primaria);
 }
 
 /* header */
@@ -65,9 +72,9 @@ header:hover {
 .card {
     padding: 20px;
     margin: 40px;
-    border: 4px solid rgb(39, 155, 74);
+    border: 4px solid var(--cor-primaria);
     border-radius: 18px;
-    box-shadow: rgb(39, 155, 74) 0 0 10px;
+    box-shadow: var(--cor-primaria) 0 0 10px;
     transition: scale 0.2s, box-shadow 0.2s;
     min-width: 600px;
     max-width: auto;
@@ -79,7 +86,7 @@ header:hover {
 
 .card:hover {
     scale: 105%;
-    box-shadow: rgb(39, 155, 74) 0 0 15px;
+    box-shadow: var(--cor-primaria) 0 0 15px;
 }
 
 /* media query-s */
