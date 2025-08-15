@@ -1,0 +1,119 @@
+/* chamar o arquivo com as variaveis padrão */
+
+@import url(raizera.css);
+
+/* body */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: system-ui;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: max-content;
+    cursor: default;
+}
+
+/* img */
+
+img {
+    border: 3px solid var(--cor-primaria);
+    border-radius: 15px;
+    box-shadow: var(--cor-primaria) 0 0 15px;
+}
+
+/* ul (lista não ordenada) */
+
+ul {
+    padding-left: 20px;
+}
+
+/* li (item (da lista não-ordenada)) */
+
+li {
+    margin: 4px;
+}
+
+/* a (links locais) */
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--cor-primaria);
+}
+
+/* footer */
+
+footer {
+    padding: 20px;
+    position: center;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid white;
+    background-color: black;
+    bottom: 0;
+    transition: border-top 0.2s;
+}
+
+footer:has(a:hover) {
+    border-top: 3px solid var(--cor-primaria);
+}
+
+/* header */
+
+header {
+    margin: 0;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+header:hover {
+    cursor: default;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* classes */
+
+.card {
+    padding: 20px;
+    margin: 40px;
+    border: 4px solid var(--cor-primaria);
+    border-radius: 18px;
+    box-shadow: var(--cor-primaria) 0 0 10px;
+    transition: scale 0.2s, box-shadow 0.2s;
+    min-width: 200px;
+    max-width: auto;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-style: italic;
+}
+
+.card:hover {
+    scale: 105%;
+    box-shadow: var(--cor-primaria) 0 0 15px;
+}
